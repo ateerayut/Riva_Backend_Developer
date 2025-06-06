@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riva_Backend_Developer", "Riva_Backend_Developer\Riva_Backend_Developer.csproj", "{DCB206CC-0B5F-443F-99BD-38DB2B4E9175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{4467C8C3-9275-421F-AA0A-B678126F14F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCB206CC-0B5F-443F-99BD-38DB2B4E9175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB206CC-0B5F-443F-99BD-38DB2B4E9175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB206CC-0B5F-443F-99BD-38DB2B4E9175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB206CC-0B5F-443F-99BD-38DB2B4E9175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4467C8C3-9275-421F-AA0A-B678126F14F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4467C8C3-9275-421F-AA0A-B678126F14F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4467C8C3-9275-421F-AA0A-B678126F14F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4467C8C3-9275-421F-AA0A-B678126F14F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D6BFD10-C688-4C51-AA94-16691A58DE8C}
+	EndGlobalSection
+EndGlobal

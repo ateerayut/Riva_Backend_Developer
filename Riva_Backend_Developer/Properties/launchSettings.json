@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Riva_Backend_Developer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
