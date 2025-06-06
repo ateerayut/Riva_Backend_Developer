@@ -85,6 +85,12 @@ namespace TestProject
                 CreateValidSyncJob()
             };
 
+            for (int i = 0; i < 2000; i++)
+            {
+               jobs.Add(CreateValidSyncJob());
+               jobs.Add(CreateInvalidSyncJob());
+
+            }
             // Act
             await _processor.ProcessAll(jobs);
 
@@ -123,10 +129,10 @@ namespace TestProject
         {
             return new SyncJob
             {
-                JobId = Guid.NewGuid(),
+                JobId = Guid.CreateVersion7(),
                 User = new CrmUser
                 {
-                    UserId = Guid.NewGuid(),
+                    UserId = Guid.CreateVersion7(),
                     Email = "test@example.com",
                     Platform = "TestPlatform",
                     Token = "valid_token"
@@ -141,10 +147,10 @@ namespace TestProject
         {
             return new SyncJob
             {
-                JobId = Guid.NewGuid(),
+                JobId = Guid.CreateVersion7(),
                 User = new CrmUser
                 {
-                    UserId = Guid.NewGuid(),
+                    UserId = Guid.CreateVersion7(),
                     Email = "test@example.com",
                     Platform = "TestPlatform",
                     Token = "" // Invalid - empty token

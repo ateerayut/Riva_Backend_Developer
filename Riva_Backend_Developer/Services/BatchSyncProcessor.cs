@@ -57,7 +57,7 @@ namespace Riva_Backend_Developer.Services
             try
             {
                 // Simulate processing the job
-                await Task.Delay(1000);
+                await Task.Delay(10);
                 job.MarkAsCompleted();
                 Console.WriteLine($"Job {job.JobId} completed successfully.");
             }

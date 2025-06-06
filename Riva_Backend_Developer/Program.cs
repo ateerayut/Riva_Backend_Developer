@@ -1,5 +1,6 @@
 ﻿using Riva_Backend_Developer.Models;
 using Riva_Backend_Developer.Services;
+#region sample data
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("=== Riva CRM Data Sync Engine ===\n");
@@ -28,6 +29,14 @@ var outlookUser2 = new CrmUser
     Token = ""
 };
 
+var saleforceUser2 = new CrmUser
+{
+    UserId = Guid.CreateVersion7(),
+    Email = "sample2@company.com",
+    Platform = "Salesforce",
+    Token = "Randommmm"
+};
+
 var syncJob = new List<SyncJob>
 {
     new SyncJob
@@ -51,8 +60,18 @@ var syncJob = new List<SyncJob>
         ObjectType = "Contact",
         Payload = "123",
         Status = SyncJobStatus.Pending }
+       ,
+       new SyncJob
+    {
+        JobId = Guid.CreateVersion7(),
+        User = saleforceUser2,
+        ObjectType = "Contact",
+        Payload = "",
+        Status = SyncJobStatus.Pending }
 
 };
+#endregion
+
 
 var tokenValidator = new SimpleTokenValidator();
 var batchSyncProcessor = new BatchSyncProcessor(tokenValidator);
